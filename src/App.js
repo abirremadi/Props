@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Profile from './profile/Profile'
+import './profile/Profile.css'
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const handleName=()=> alert('hello iam Abir')
 
-export default App;
+   return (
+    <div className="App">
+      <Profile fullName={'Abir Remadi'} bio={'Hello'} profession={'Mechatronics Engineer'}  alert={handleName}>
+        <img src='https://i1.wp.com/pngall.com/wp-content/uploads/2017/03/Minnie-Mouse-Transparent.png' alt='profile'/>
+      </Profile>
+      </div>
+    )
+    }
+export default App; 
